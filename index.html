@@ -5,54 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trilha de CSS - DIO</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body>
-  <header class="banner">
-    <div class="banner-content">
-      <div class="logo">
-        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+  <header class="bg-cover bg-no-repeat bg-slate-900 py-32 relative" style="background-image: linear-gradient(to bottom, rgba(3, 58, 137, 0.2), rgba(0, 0, 0, 0.6)), url(./assets/images/banner.png);">
+    <div class="w-3/4 mx-auto text-center">
+      <div>
+        <img class="mx-auto bg-black p-4 bg-opacity-30 rounded-full mb-5" src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
       </div>
-      <h1>Trilha de CSS da DIO</h1>
-      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
-      <button>Quero me inscrever</button>
+      <h1 class="text-blue-500 font-bold text-5xl uppercase">Trilha de CSS da DIO</h1>
+      <p class="text-white mt-4 w-2/5 mx-auto">A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <button class="tracking-widest uppercase px-12 py-2 bg-none border-blue-500 border-2 font-bold text-blue-500 mt-6 hover:bg-blue-500 hover:text-white transition duration-300" style="background-image: linear-gradient(to bottom, rgba(3, 58, 137, 0.1), rgba(3, 0, 102, 0.05))">
+        Quero me inscrever
+      </button>
     </div>
   </header>
-  <main>
-    <section id="course-content">
-      <h2>O que vou aprender?</h2>
-      <p>
+  
+  <main class="bg-black border-t-4 border-blue-700">
+    <section class="w-3/4 mx-auto text-center text-white">
+      <h2 class="tracking-widest uppercase text-cyan-500 font-semibold text-3xl mt-32 mb-8">O que vou aprender?</h2>
+      <p class="text-slate-200 w-2/5 mx-auto mb-8">
         Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
         desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
       </p>
-      <div class="modules-list">
-        <div class="module">
-          <span>Módulo 01:</span> primeiros passos com CSS
+      <div class="modules-list w-2/5 mx-auto">
+        <div class="py-3 bg-zinc-800 border-cyan-500 border-2 rounded-full shadow-black shadow-inner mb-8">
+          <span class="text-blue-300">Módulo 01:</span> primeiros passos com CSS
         </div>
-        <div class="module">
-          <span>Módulo 02:</span> trabalhando com layouts no CSS
+        <div class="py-3 bg-zinc-800 border-cyan-500 border-2 rounded-full shadow-black shadow-inner mb-8">
+          <span class="text-blue-300">Módulo 02:</span> trabalhando com layouts no CSS
         </div>
-        <div class="module">
-          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+        <div class="py-3 bg-zinc-800 border-cyan-500 border-2 rounded-full shadow-black shadow-inner mb-16">
+          <span class="text-blue-300">Módulo 03:</span> refinando os estilos CSS das nossas páginas
         </div>
       </div>
     </section>
-    <section id="transform-world">
-      <p>TRANSFORME O MUNDO COM A GENTE</p>
-    </section>
-    <section id="professional-challenges">
-      <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
-      <p>
+    <section class="border-4 border-l-0 border-blue-700 bg-cover bg-fixed bg-no-repeat py-32" style="background-image:url(./assets/images/woman-code.png)">
+      <p class="ml-48 w-2/12 text-white text-3xl font-extrabold" style="text-shadow: 16rem 16rem 2rem rgba(0, 0, 0, 0.8), -1px -1px 3px rgba(0, 255, 255, 0.6);">
+        TRANSFORME O MUNDO COM A GENTE
+      </p>
+    </section>    
+    <section id="professional-challenges" class="bg-black py-32 text-center text-white">
+      <h2 class="text-cyan-500 text-3xl font-bold uppercase mb-8 tracking-wide">
+        Evolua e encare novos desafios profissionais
+      </h2>
+      <div class="relative w-3/4 mx-auto">
+        <img
+          src="./assets/images/professional-challenges.png"
+          alt="Evolua e encare novos desafios profissionais"
+          class="w-2/4 mx-auto rounded-lg shadow-lg "
+        />
+      </div>
+      <p class="text-slate-300 text-lg w-2/5 mx-auto mt-12 leading-6">
         Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
         acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
         além do conhecimento técnico. 
         A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
       </p>
     </section>
+    
   </main>
-  <footer>
-    <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+  <footer class="bg-gradient-to-t from-slate-900  to-black py-12 text-center text-white border-t-4 border-blue-500">
+    <img class="mx-auto mb-4 w-2/12" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+    <p class="text-slate-300 text-lg">Acesse <a href="https://dio.me" class="text-cyan-500 font-bold hover:underline">dio.me</a> e se cadastre agora</p>
   </footer>
 </body>
 </html>
